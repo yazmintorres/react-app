@@ -1,10 +1,9 @@
 import React from "react";
-import SecretNumber from "../game-components/SecretNumber";
 
-export default function Game() {
+export default function Message(props) {
+ 
   return (
-    <section id="game">
-      <SecretNumber />
+    <>
       <p>Message: too high or too low</p>
       <div id="container">
         <div className="user-cards">
@@ -21,6 +20,6 @@ export default function Game() {
           <div id="chances">5</div>
         </div>
       </div>
-    </section>
+    </>
   );
 }

@@ -1,8 +1,9 @@
 // this is my parent component that react will render
 import "./styles.css";
-import Intro from "./app-components/Intro";
-import Game from "./app-components/Game";
+import Intro from "./components/Intro";
+import SecretNumber from "./components/GuessSecretNumber";
 import { useState } from "react";
+import GuessSecretNumber from "./components/GuessSecretNumber";
 
 export default function App() {
   let title = "Guess Secret Number";
@@ -12,7 +13,7 @@ export default function App() {
   return (
     <div id="body-container">
       <Intro title={title} instructions={instructions} />
-      <Game />
+      <GuessSecretNumber />
     </div>
   );
 }
