@@ -5,3 +5,9 @@ body {
 #body-container {
   text-align: center;
 }
+
+#container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
