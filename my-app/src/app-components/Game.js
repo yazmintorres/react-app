@@ -16,7 +16,7 @@ export default function Game() {
             </button>
           </form>
         </div>
-        <div class="user-cards">
+        <div className="user-cards">
           <p>Chances Left</p>
           <div id="chances">5</div>
         </div>
