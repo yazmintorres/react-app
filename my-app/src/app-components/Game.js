@@ -1,10 +1,10 @@
+import React from "react";
+import SecretNumber from "../game-components/SecretNumber";
+
 export default function Game() {
   return (
     <section id="game">
-      <div id="secret-number">
-        <p>Secret Number:</p>
-        <button id="generate-number">Click Me</button>
-      </div>
+      <SecretNumber />
       <p>Message: too high or too low</p>
       <div id="container">
         <div class="user-cards">
