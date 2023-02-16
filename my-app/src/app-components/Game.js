@@ -7,7 +7,7 @@ export default function Game() {
       <SecretNumber />
       <p>Message: too high or too low</p>
       <div id="container">
-        <div class="user-cards">
+        <div className="user-cards">
           <p>Guess Number</p>
           <form>
             <input type="text"></input>
