@@ -2,12 +2,91 @@ body {
   background-color: #ecf2ff;
 }
 
+h1 {
+  font-size: 40px;
+}
+
+p,
+#generate-number {
+  font-size: 20px;
+}
+
 #body-container {
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #container {
   display: flex;
   justify-content: center;
   gap: 50px;
+}
+
+input {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#submit {
+  width: 60px;
+  height: 50px;
+}
+
+#intro,
+#game {
+  margin: auto;
+  width: 50%;
+  background-color: #e3dffd;
+}
+
+#intro {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
+}
+
+#generate-number {
+  margin: auto;
+  height: 30px;
+  display: inline-block;
+  height: 125px;
+  width: 125px;
+  background: burlywood;
+  border: 4px solid black;
+}
+
+#game > p {
+  margin: 0;
+}
+
+#secret-number {
+  display: flex;
+  flex-direction: column;
+}
+
+#secret-number > p {
+  font-weight: bold;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+#chances {
+  width: 50px;
+  height: 50px;
+  padding: 10px 0;
+  font-size: 30px;
+  margin: auto;
 }

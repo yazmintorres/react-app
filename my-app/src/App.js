@@ -5,24 +5,31 @@ export default function App() {
   return (
     <div id="body-container">
       <section id="intro">
-        <h1>Hello</h1>
+        <h1>Guess Secret Number</h1>
         <p>
           Instructions: guess the number between 1 and 20. You only have 5
           chances!
         </p>
       </section>
       <section id="game">
-        <button id="generate-number">Generate random number</button>
+        <div id="secret-number">
+          <p>Secret Number:</p>
+          <button id="generate-number">Click Me</button>
+        </div>
         <p>Message: too high or too low</p>
         <div id="container">
           <div class="user-cards">
             <p>Guess Number</p>
-            <input type="text"></input>
-            <button>Submit</button>
+            <form>
+              <input type="text"></input>
+              <button id="submit" type="submit">
+                Submit
+              </button>
+            </form>
           </div>
           <div class="user-cards">
             <p>Chances Left</p>
-            <div>Input number of chances left</div>
+            <div id="chances">5</div>
           </div>
         </div>
       </section>
