@@ -74,12 +74,12 @@ input {
 #secret-number {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
 #secret-number > p {
   font-weight: bold;
   margin: 0px;
-  margin-bottom: 10px;
 }
 
 #chances {
