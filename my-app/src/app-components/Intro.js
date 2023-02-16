@@ -1,11 +1,8 @@
-export default function Intro() {
+export default function Intro(props) {
   return (
     <section id="intro">
-      <h1>Guess Secret Number</h1>
-      <p>
-        Instructions: guess the number between 1 and 20. You only have 5
-        chances!
-      </p>
+      <h1>{props.title}</h1>
+      <p>{props.instructions}</p>
     </section>
   );
 }
