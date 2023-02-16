@@ -1,4 +1,5 @@
 // this is my parent component that react will render
+import "./styles.css";
 
 export default function App() {
   return (
