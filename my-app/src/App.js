@@ -1,16 +1,11 @@
 // this is my parent component that react will render
 import "./styles.css";
+import Intro from "./components/Intro";
 
 export default function App() {
   return (
     <div id="body-container">
-      <section id="intro">
-        <h1>Guess Secret Number</h1>
-        <p>
-          Instructions: guess the number between 1 and 20. You only have 5
-          chances!
-        </p>
-      </section>
+      <Intro />
       <section id="game">
         <div id="secret-number">
           <p>Secret Number:</p>
