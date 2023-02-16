@@ -1,14 +1,14 @@
 import { useState } from "react";
 import Message from "./Message";
 
-export default function GuessSecretNumber() {
-  let [secretNumber, setSecretNumber] = useState(null);
+export default function SetSecretNumber() {
+  const [secretNumber, setSecretNumber] = useState(null);
   function handleClick() {
     setSecretNumber(Math.floor(Math.random() * 20 + 1));
     console.log(secretNumber);
   }
   return (
-    <section id="game">
+    <section id="game" className="container">
       <div id="secret-number">
         <p>Secret Number:</p>
         <button id="generate-number" onClick={handleClick}>

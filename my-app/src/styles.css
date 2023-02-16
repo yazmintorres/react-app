@@ -37,8 +37,7 @@ input {
   height: 50px;
 }
 
-#intro,
-#game {
+.container {
   margin: auto;
   width: 50%;
   background-color: #e3dffd;
