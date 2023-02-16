@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import ChancesLeft from "./ChancesLeft";
 
-export default function Message(props) {
+export default function UserMessage(props) {
   const [inputValue, setInputValue] = useState(null);
   function handleChange(e) {
     setInputValue(e.target.value);

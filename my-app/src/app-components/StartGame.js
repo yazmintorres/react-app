@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Message from "./Message";
+import UserMessage from "../components/UserMessage";
 
-export default function SetSecretNumber() {
+export default function StartGame() {
   const [secretNumber, setSecretNumber] = useState(null);
   function handleClick() {
     setSecretNumber(Math.floor(Math.random() * 20 + 1));
@@ -15,7 +15,7 @@ export default function SetSecretNumber() {
           Click Me
         </button>
       </div>
-      <Message secretNumber={secretNumber} />
+      <UserMessage secretNumber={secretNumber} />
     </section>
   );
 }
