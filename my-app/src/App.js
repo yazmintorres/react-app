@@ -1,7 +1,7 @@
 // this is my parent component that react will render
 import "./styles.css";
-import Intro from "./app-components/Intro";
-import StartGame from "./app-components/StartGame";
+import Intro from "./components/Intro";
+import StartGame from "./components/StartGame";
 
 export default function App() {
   let title = "Guess Secret Number";

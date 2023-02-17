@@ -1,5 +1,5 @@
 import { useState } from "react";
-import UserMessage from "../startgame-components/UserMessage";
+import UserMessage from "./UserMessage";
 
 export default function StartGame() {
   const [secretNumber, setSecretNumber] = useState(() =>
