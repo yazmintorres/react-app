@@ -70,13 +70,13 @@ input {
   margin: 0;
 }
 
-#secret-number {
+#secret-number-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-#secret-number > p {
+#secret-number-container > p {
   font-weight: bold;
   margin: 0px;
 }

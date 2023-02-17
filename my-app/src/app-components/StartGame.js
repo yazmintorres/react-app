@@ -9,7 +9,7 @@ export default function StartGame() {
   }
   return (
     <section id="game" className="container">
-      <div id="secret-number">
+      <div id="secret-number-container">
         <p>Secret Number:</p>
         <button id="generate-number" onClick={handleClick}>
           Click Me
