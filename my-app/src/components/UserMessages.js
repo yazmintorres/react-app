@@ -34,7 +34,11 @@ export default function UserMessages() {
     console.log(attempts);
     let inputValue = e.target.guess.value;
     let gameOn = attempts > 0;
+
+    // IM NOT SURE HOW I WOULD DO THE IF/ELSE STATEMENT LOGIC DIFFERENTLY
+    // I FEEL LIKE THIS CAN PROBABLY BE DONE MORE CONCISELY? --> GET FEEDBACK FROM VIVIAN
     if (gameOn) {
+      setAttempts((prevValue) => prevValue - 1);
       if (secretNum === Number(inputValue)) {
         setMessage(
           <>
@@ -45,7 +49,6 @@ export default function UserMessages() {
         setDisplay(displaySecretNumEl);
         gameOn = false;
       } else {
-        setAttempts((prevValue) => prevValue - 1);
         if (attempts === 1) {
           console.log(inputValue, secretNum, inputValue !== secretNum);
           setMessage(
@@ -64,8 +67,8 @@ export default function UserMessages() {
           }
         }
       }
+      console.log(`guess: ${inputValue}, secret Number: ${secretNum} `);
     }
-    console.log(`guess: ${inputValue}, secret Number: ${secretNum} `);
   }
 
   return (
