@@ -6,7 +6,7 @@ export default function StartGame() {
     Math.floor(Math.random() * 20 + 1)
   );
 
-  const [message, setMessage] = useState(
+  const [displaySecretNumber, setDisplaySecretNumber] = useState(
     <img src="https://cdn-icons-png.flaticon.com/512/3524/3524335.png" />
   );
 
@@ -14,7 +14,7 @@ export default function StartGame() {
     <section id="game" className="container">
       <div id="secret-number-container">
         <p>Secret Number:</p>
-        <div id="secret-number">{message}</div>
+        <div id="secret-number">{displaySecretNumber}</div>
       </div>
       <UserMessage secretNumber={secretNumber} />
     </section>

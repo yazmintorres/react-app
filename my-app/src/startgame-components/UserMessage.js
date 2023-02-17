@@ -3,18 +3,31 @@ import React, { useState } from "react";
 import ChancesLeft from "./ChancesLeft";
 
 export default function UserMessage(props) {
-  const [inputValue, setInputValue] = useState(null);
+  const [message, setMessage] = useState(<p>"Make a guess!"</p>);
+  const [attempts, setAttempts] = useState(5);
 
   function handleSubmit(e) {
     e.preventDefault();
-    setInputValue(e.target.guess.value);
-    console.log(inputValue);
+    setAttempts((prevValue) => prevValue - 1);
+    let inputValue = e.target.guess.value;
+    if (attempts > 0) {
+      if (props.secretNumber > inputValue) {
+        setMessage(<p style={{ color: "red" }}>"Too low!"</p>);
+      } else if (props.secretNumber < inputValue) {
+        setMessage(<p style={{ color: "red" }}>"Too high!"</p>);
+      } else {
+        setMessage(<p style={{ color: "green" }}>"Correct"</p>);
+      }
+    } else {
+      setMessage(<p style={{ color: "purple" }}>Uh oh, no more chances</p>);
+    }
+    console.log(`guess: ${inputValue}, secret Number: ${props.secretNumber} `);
   }
 
   //  store value of input text
   return (
     <>
-      <p>Message: too high or too low</p>
+      {message}
       <div id="container">
         <div>
           <p>Guess Number</p>
