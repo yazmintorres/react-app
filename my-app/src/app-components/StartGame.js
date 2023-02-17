@@ -11,7 +11,7 @@ export default function StartGame() {
     <section id="game" className="container">
       <div id="secret-number-container">
         <p>Secret Number:</p>
-        <button id="generate-number" onClick={handleClick}>
+        <button id="secret-number" onClick={handleClick}>
           Click Me
         </button>
       </div>
