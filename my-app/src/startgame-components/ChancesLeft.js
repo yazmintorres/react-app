@@ -1,8 +1,8 @@
-export default function ChancesLeft() {
+export default function ChancesLeft(props) {
   return (
     <div>
       <p>Chances Left</p>
-      <div id="chances">5</div>
+      <div id="chances">{props.attempts}</div>
     </div>
   );
 }

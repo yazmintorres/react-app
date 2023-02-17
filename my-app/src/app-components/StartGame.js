@@ -16,7 +16,10 @@ export default function StartGame() {
         <p>Secret Number:</p>
         <div id="secret-number">{displaySecretNumber}</div>
       </div>
-      <UserMessage secretNumber={secretNumber} />
+      <UserMessage
+        secretNumber={secretNumber}
+        displaySecretNumber={setDisplaySecretNumber}
+      />
     </section>
   );
 }
