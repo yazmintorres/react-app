@@ -1,7 +1,7 @@
 // this is my parent component that react will render
 import "./styles.css";
 import Intro from "./components/Intro";
-import StartGame from "./components/StartGame";
+import UserMessages from "./components/UserMessages";
 
 export default function App() {
   let title = "Guess Secret Number";
@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div id="body-container">
       <Intro title={title} instructions={instructions} />
-      <StartGame />
+      <UserMessages />
     </div>
   );
 }
